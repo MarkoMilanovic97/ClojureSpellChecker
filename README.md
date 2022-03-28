@@ -5,9 +5,9 @@ This repository contains project written in Clojure and JavaScript.
 
 ## Repository structure
 
-* Directory [backend](./backend/README.md) contains Clojure application which is a server part of the project.
+* Directory backend contains Clojure application which is a server part of the project.
 
-* Directory [frontend](./client/README.md) contains React application which is a GUI part of the project.
+* Directory frontend contains React application which is a GUI part of the project.
 
 ## Setup
 
