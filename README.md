@@ -5,9 +5,9 @@ This repository contains project written in Clojure and JavaScript.
 
 ## Repository structure
 
-* Directory backend contains Clojure application which is a server part of the project.
+* Directory [backend](./backend) contains Clojure application which is a server part of the project.
 
-* Directory frontend contains React application which is a GUI part of the project.
+* Directory [frontend](./frontend) contains React application which is a GUI part of the project.
 
 ## Setup
 
