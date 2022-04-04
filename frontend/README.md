@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# ClojureSpellChecker/frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Content
+This repository contains React project that represents GUI part of the application.
 
-## Available Scripts
+## Repository structure
+This project was initialized with 'npx create-react-app 'applicationName'' which generates blank template for the application.
 
-In the project directory, you can run:
+Below will be listed only directories and files that have been configured and are crucial for the application to work.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Directory [src](./src) contains 2 important files:
+* [App.css](./src/App.css) - this is a .css file where styles for the application are added.
+* [App.js](./src/App.js) - this file contains a JavaScript and HTML code that is being used for the application. When user goes to the page, he can see a input field in which he need to enter a word and then click on submit button which then, if the field is not empty, calls the API for the entered word. If word is spelled correctly, user can see success(green) message. If not, user can see warning(red) message and is being asked if he ment min levenshtein distance word. If the field is empty and user tries to submit, he gets the adecvate message(error label) that reminds him that field should not be empty.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* File [package.json](./package.json) contains all the dependencies that are used in this React project. Those are:
+* axios - promise base HTTP client
+* formik - library that keeps track of values/errors/visited fields, orchestrating validation, and handling submission
+* yup - schema builder for runtime value parsing and validation
+* react-notifications - notification manager for React
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup
 
-### `npm run build`
+Follow steps below to successfully run the GUI:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.Open a terminal in this directory and type a command: 'npm run'. This command starts the GUI. Do not close the terminal.
