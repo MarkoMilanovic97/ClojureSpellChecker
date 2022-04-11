@@ -29,3 +29,17 @@ Below will be listed only directories and files that have been configured and ar
 Follow steps below to successfully run the server:
 
 1.Open a terminal in this directory and type a command: 'lein run'. This command starts the server. Do not close the terminal.
+
+
+## Literature
+
+For learning Clojure: https://www.braveclojure.com/
+
+For spellchecker part of the server, literature and examples from: 
+https://bernhardwenzel.com/articles/clojure-spellchecker/
+were used.
+
+For server part, literature from following sites was used:
+* https://github.com/metosin/reitit/blob/master/doc/ring/ring.md
+* https://github.com/http-kit/http-kit
+* https://github.com/metosin/reitit
